@@ -1,0 +1,18 @@
+<div class="page-header">
+  <%= link_to jogos_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Voltar
+  <% end %>
+  <%= link_to edit_jogo_path(@jogo), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  <h1>Mostrar jogo</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Nome:</dt>
+  <dd><%= @jogo.nome %></dd>
+  <dt>Odd:</dt>
+  <dd><%= @jogo.odd %></dd>
+</dl>
